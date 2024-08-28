@@ -11,7 +11,7 @@
       <h1 class="text-2xl font-bold px-6 py-2">Calculadora de Investimentos</h1>
       <form id="investment-form" class="w-full">
         <!-- Investimento inicial -->
-        <div class="flex flex-col w-full px-6 my-2">
+        <div class="flex flex-col w-full px-6 my-2 h-[4.25rem]">
           <label for="starting-amount" class="font-semibold text-grey-700">Investimentos inicias</label>
           <div class="flex">
             <input type="text" class="w-1/6 text-center rounded-l-lg" value="R$" disabled class="" />
@@ -24,9 +24,10 @@
               required
             />
           </div>
+          <!-- <p class="text-red-500">Insira um valor numérico e maior que zero</p> -->
         </div>
         <!-- Aportes adicionais -->
-        <div class="flex flex-col w-full px-6 my-2">
+        <div class="flex flex-col w-full px-6 my-2 h-[4.25rem]">
           <label for="additional-contribution" class="font-semibold text-grey-700">Aportes adicionais</label>
           <div class="flex">
             <input type="text" class="w-1/6 text-center rounded-l-lg" value="R$" disabled class="" />
@@ -40,7 +41,7 @@
           </div>
         </div>
         <!-- Prazo -->
-        <div class="flex flex-col w-full px-6 my-2">
+        <div class="flex flex-col w-full px-6 my-2 h-[4.25rem]">
           <label for="time-amount" class="font-semibold text-grey-700">Prazo</label>
           <div class="flex">
             <input
@@ -62,7 +63,7 @@
           </div>
         </div>
         <!-- Rentabilidade -->
-        <div class="flex flex-col w-full px-6 my-2">
+        <div class="flex flex-col w-full px-6 my-2 h-[4.25rem]">
           <label for="return-rate" class="font-semibold text-grey-700">Rentabilidade</label>
           <div class="flex">
             <input type="text" class="w-1/6 text-center rounded-l-lg" value="%" disabled class="" />
@@ -78,7 +79,7 @@
           </div>
         </div>
         <!-- Impostos sobre lucro -->
-        <div class="flex flex-col w-full px-6 my-2">
+        <div class="flex flex-col w-full px-6 my-2 h-[4.25rem]">
           <label for="tax-rate" class="font-semibold text-grey-700">Impostos sobre lucro</label>
           <div class="flex">
             <input type="text" class="w-1/6 text-center rounded-l-lg" value="%" disabled class="" />
@@ -94,7 +95,7 @@
         >
           Calcular
         </button>
-        <button class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
+        <button id="clear-form" class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
       </div>
     </aside>
     <main>
